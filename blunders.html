@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> ACHIEVEMENTS </title>
+  <style>
+  body {
+    background-image: url('b.jpeg');
+    background-size: 100px 100px;
+  }
+  h1{text-align: center;}
+  *{
+  margin: 0;
+  padding: 0;
+  }
+    .wrapper{
+    width: 860px;
+    margin: 0 auto;
+    }
+    .wrapper ul{
+    list-style: none;
+    margin-top: 2%;
+    }
+    .wrapper ul li {
+    background: darkorchid;
+    width: 170px;
+    border: 1px solid #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    font-family: poppins;
+    text-transform: uppercase;
+    font-weight: bold;
+    }
+    .wrapper ul li:hover{
+    background: mediumpurple;
+    }
+
+    .wrapper ul ul{
+    display: none;
+    }
+    .wrapper ul li:hover > ul{
+    display: block;
+    }
+    .wrapper ul ul ul{
+    margin-left: 170px;
+    top: 0;
+    position: absolute;
+    }
+    #check:checked ~ ul{
+    left: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    .slideshow{
+     margin: 0 auto;
+     padding-top: 50px;
+     height: 400px;
+     perspective: 1000px;
+   }
+   .content{
+     margin: auto;
+     width: 150px;
+     perspective: 1000px;
+     position:relative;
+     padding-top: 80px;
+     transform-style: preserve-3d;
+   }
+   .slider-content{
+     width: 100%;
+     position:absolute;
+     float:right;
+     animation: rotate 15s infinite linear;
+     transform-style: preserve-3d;
+   }
+   .slider-content:hover{
+     cursor: pointer;
+     animation-play-state: paused;
+   }
+   .slider-content figure{
+     width:180px;
+     height:120px;
+     border:2px solid red;
+     overflow:hidden;
+     position:absolute;
+   }
+   .slider-content img{
+     image-rendering: ;
+     transition: all 300ms;
+     width: 100%;
+     height: 100%;
+   }
+
+   .slider-content img:hover{
+      transform: scale(1.2);
+      transition: all 300ms;
+   }
+   .shadow{
+      position: absolute;
+      box-shadow: 0px 0px 0px #000;
+   }
+   .slider-content figure:nth-child(1){
+     transform:rotateY(0deg) translateZ(250px);
+   }
+
+   .slider-content figure:nth-child(2){
+     transform:rotateY(45deg) translateZ(250px);
+   }
+   .slider-content figure:nth-child(3){
+     transform:rotateY(90deg) translateZ(250px);
+   }
+   .slider-content figure:nth-child(4){
+     transform:rotateY(135deg) translateZ(250px);
+   }
+   .slider-content figure:nth-child(5){
+     transform:rotateY(180deg) translateZ(250px);
+   }
+   .slider-content figure:nth-child(6){
+     transform:rotateY(225deg) translateZ(250px);
+   }
+   .slider-content figure:nth-child(7){
+     transform:rotateY(270deg) translateZ(250px);
+   }
+   .slider-content figure:nth-child(8){
+     transform:rotateY(315deg) translateZ(250px);
+   }
+
+   @keyframes rotate {
+     from{
+       transform: rotateY(0deg);
+     }
+     to{
+         transform: rotateY(360deg);
+     }
+   }
+    </style>
+    <style>
+      body {
+      margin: 0px;
+    }
+
+    div#gallery {
+      width: 800px;
+      margin: auto;
+    }
+
+
+    #background img {
+      height: 150px;
+      margin: 0px
+    }
+
+    #background figure {
+      float: left;
+      position: relative;
+      background-color: antiquewhite;
+      text-align: center;
+      font-size: 15px;
+      padding: 10px;
+      margin: 10px;
+      box-shadow: 1px 2px 3px black;
+    }
+
+    figure.pic1 {
+      -webkit-transform : rotate(-10deg);
+      z-index: 1;
+    }
+
+    figure.pic2 {
+      -webkit-transform : rotate(15deg);
+      z-index: 2;
+    }
+
+    figure.pic3 {
+      -webkit-transform : rotate(-25deg);
+      z-index: 1;
+    }
+
+    figure.pic4 {
+      -webkit-transform : rotate(5deg);
+      z-index:1;
+    }
+
+    figure.pic5 {
+      -webkit-transform : rotate(5deg);
+      z-index:1;
+    }
+
+    figure.pic6 {
+      -webkit-transform : rotate(-8deg);
+      z-index:1;
+    }
+
+    figure.pic7 {
+      -webkit-transform : rotate(2deg);
+      z-index:1;
+    }
+
+    figure.pic8 {
+      -webkit-transform : rotate(-13deg);
+      z-index:1;
+    }
+
+    figure.pic9 {
+      -webkit-transform : rotate(-10deg);
+      z-index: 1;
+    }
+
+    figure.pic10 {
+      -webkit-transform : rotate(15deg);
+      z-index: 2;
+    }
+
+    figure.pic11 {
+      -webkit-transform : rotate(-25deg);
+      z-index: 1;
+    }
+
+    figure.pic12 {
+      -webkit-transform : rotate(5deg);
+      z-index:1;
+    }
+
+    figure.pic13 {
+      -webkit-transform : rotate(5deg);
+      z-index:1;
+    }
+
+    figure.pic14 {
+      -webkit-transform : rotate(-8deg);
+      z-index:1;
+    }
+
+    figure.pic15 {
+      -webkit-transform : rotate(2deg);
+      z-index:1;
+    }
+
+    figure.pic16 {
+      -webkit-transform : rotate(-13deg);
+      z-index:1;
+    }
+
+    #background figure:hover {
+      box-shadow: 5px 10px 100px black;
+      -webkit-transform: scale(1.1,1.1);
+      z-index: 20;
+    }
+    span {
+    background-color: seagreen;
+    }
+    p {text-align: justify;
+  }
+  h2{
+    font-size: 50px;
+    text-align: center;
+  }
+  div.text{
+    background-image: url('y.jpeg');
+    background-size: 810px,auto;
+    width: 750px;
+    padding: 30px;
+    margin: auto;
+    font-size: 30px;
+  }
+      </style>
+    <head>
+      <body>
+        <header>
+          <nav class="wrapper">
+            <ul>
+        <li><a href="index.html" style="color:white">Home</a></li>
+        <li><a href="hbd.html" style="color:white">HBD</a></li>
+        <li> HAPPY PLACE
+                    <ul>
+        <li><a href="me.html" style="color:white">ME</a></li>
+        <li><a href="crush.html" style="color:white"><3<3<3</a></li>
+        <li><a href="sky.html" style="color:white">SKY</a></li>
+        <li><a href="siblings.html" style="color:white">SIBLINGS</a></li>
+        <li><a href="us.html" style="color:white">US MAYBE</a></li>
+        </ul>
+        </li>
+      <li><a href="chemistry.html" style="color:white">STUDY</a></li>
+        <li style="color: peachpuff"> R O M
+        <ul>
+          <li><a href="password.html"style="color:peachpuff">ACHIEVEMENTS!</a></li>
+          <li><a href="youu.html"style="color:white">IMPECCABLE ISHA</a></li>
+          <li><a href="tictactoe.html"style="color:white">TIC TAC TOE</a></li>
+        </ul>
+        </li>
+      </nav>
+      </header>
+      <br/>
+      <br/>
+      <br/>
+      <main>
+        <h1 style="color:white"><span> Relationships?</span></h1>
+        <h1 style="color:white"><span>Nahhh, Isha gets situationships..</span> </h1>
+        <br/>
+        <section class="slideshow">
+         <div class="content">
+            <div class="slider-content">
+              <figure class="shadow"><img src="a (4).jpeg"></figure>
+              <figure class="shadow"><img src="a (6).jpeg"></figure>
+              <figure class="shadow"><img src="a (11).jpeg"></figure>
+              <figure class="shadow"><img src="a (12).jpeg"></figure>
+              <figure class="shadow"><img src="a (15).jpeg"></figure>
+              <figure class="shadow"><img src="a (16).jpeg"></figure>
+              <figure class="shadow"><img src="a (21).jpeg"></figure>
+              <figure class="shadow"><img src="a (24).jpeg"></figure>
+              <figure class="shadow"><img src="w1.jpeg"></figure>
+            </div>
+         </div>
+      </section>
+      <p style="color:white; background-color:blue; font-size: 25px "><b>Just like this rotating animation your cuddies keep rotating back and forth in your life ISHAHA >_< </b></p>
+      <br/>
+      <hr/>
+      <br/>
+        <div class="text">
+      <div id="background">
+        <h2 style="color:maroon"><b>WALL OF ACHIEVEMENT</b></h2>
+        <br/>
+        <div class="wall">
+        <div id="gallery">
+          <figure class="pic1">
+            <img src="a (1).jpeg" />
+          </figure>
+          <figure class="pic2">
+            <img src="a (2).jpeg" />
+          </figure>
+          <figure class="pic3">
+            <img src="a (3).jpeg" />
+          </figure>
+          <figure class="pic4">
+            <img src="a (5).jpeg" />
+          </figure>
+          <figure class="pic5">
+            <img src="a (7).jpeg" />
+          </figure>
+          <figure class="pic6">
+            <img src="a (8).jpeg" />
+          </figure>
+          <figure class="pic7">
+            <img src="a (9).jpeg" />
+          </figure>
+          <figure class="pic8">
+            <img src="a (10).jpeg" />
+          </figure>
+          <figure class="pic9">
+            <img src="a (13).jpeg" />
+          </figure>
+          <figure class="pic10">
+            <img src="a (14).jpeg" />
+          </figure>
+          <figure class="pic11">
+            <img src="a (17).jpeg" />
+          </figure>
+          <figure class="pic12">
+            <img src="a (18).jpeg" />
+          </figure>
+          <figure class="pic13">
+            <img src="a (19).jpeg" />
+          </figure>
+          <figure class="pic14">
+            <img src="a (20).jpeg" />
+          </figure>
+          <figure class="pic15">
+            <img src="a (22).jpeg" />
+          </figure>
+          </figure>
+        </div>
+      </div>
+      <br/>
+      <br/>
+        <p style="color:black;font-size: 30px" ><b><i>NO RELATIONSHIP BUT A LOT OF SITUATIONSHIP PROBLEMS, JUST ISHA THINGS.</i></b></p>
+
+      </div>
+        </main>
+        <br/>
+        <hr/>
+        <br/>
+        <footer>
+          <p style="color:black; background-color:grey; font-size: 30px"><b>CONCLUSIONNNN</b></p>
+          <p style="color:darkgrey; font-size: 22px ; background-color:black"> 1) Don't date skinny guys. </p>
+          <p style="color:darkgrey; font-size: 22px; background-color:black"> 2) Your guy best friend should be more good looking than your boyfriend </p>
+          <p style="color:darkgrey; font-size: 22px; background-color:black"> 3) Either you make them chutiya or they will make you one. </p>
+          <p style="color:darkgrey; font-size: 22px; background-color:black"> 4) If you find your serious relationship wla partner in college first year then it greattt if you don't date 40 guys in 4 years. </p>
+          <p style="color:darkgrey; font-size: 22px; background-color:black"> 5) Dating is hit and try method.</p>
+          <p style="color:darkgrey; font-size: 22px; background-color:black"> 6) It's okay to lose feelings. </p>
+          <p style="color:darkgrey; font-size: 22px; background-color:black"> 7) Date someone you vibe with. </p>
+          <p style="color:darkgrey; font-size: 22px; background-color:black"> 8) It's okay to hurt people, the only thing which is not okay is hurting yourself. </p>
+          </main>
+        </footer>
+        <br/>
+        <hr/>
+        <p style="color:white; background-color:blue; font-size: 30px"><b>THANK ME LATER FOR MAKING THIS!</b></p>
+        <br/>
+        </body>
+        </html>
